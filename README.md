@@ -134,11 +134,10 @@ ADD $t4,$t3,$t2        ;$t3 is used as source register here
 
 ```
 mips32-core/
-├── rtl/               # Verilog RTL source files
-├── tb/                # Testbenches
-├── ref_model/         # Reference model (golden interpreter)
-├── sim/               # Simulation scripts and waveforms
-└── docs/              # Block diagrams and documentation
+├── rtl/               # Design file
+├── tb/                # Testbench
+├── other/         
+
 ```
 
 ---
