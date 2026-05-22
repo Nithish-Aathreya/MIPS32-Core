@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Resume projects/MIPS32
+T_opt
+!s110 1777804147
+VW9UmC;XGDGe?OEE^fEQNB0
+Z1 04 3 4 work top fast 0
+=1-30d042048ec3-69f72372-248-1ffc
+o-quiet -auto_acc_if_foreign -work work -suppress 12110
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.7c;67
+R0
+T_opt1
+!s110 1777805963
+V5UXfNmb69;cM20QU[>HIo3
+R1
+=1-30d042048ec3-69f72a8b-17c-2c6c
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1778072722
+VNzZLF[]EU]PhWAEJ9jY`;0
+R1
+=1-30d042048ec3-69fb3c91-2b3-3088
+R4
+R2
+n@_opt2
+R3
+R0
+Yintf
+Z5 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 hWEHh>D9A85JTOXg]W>Qc3
+ICVnmHRVZ2o[E6SI8VAb=L2
+Z7 !s105 list_svh_unit
+S1
+R0
+w1778651671
+8intf.sv
+Z8 Fintf.sv
+L0 1
+Z9 OL;L;10.7c;67
+31
+Z10 !s108 1779262405.000000
+Z11 !s107 top.sv|c_env.sv|c_sbd.sv|c_agent.sv|c_gen.sv|c_bfm.sv|c_mon.sv|c_cov.sv|c_ref_model.sv|mon_txn.sv|txn.sv|common.sv|intf.sv|mips.sv|list.svh|
+Z12 !s90 -reportprogress|300|list.svh|
+!i113 0
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+Xlist_svh_unit
+!s115 intf
+R5
+VO>D74KE@HHf=mfb;bS:3H2
+r1
+!s85 0
+!i10b 1
+!s100 CGXASnAN`f4`Qbd=>OD950
+IO>D74KE@HHf=mfb;bS:3H2
+!i103 1
+S1
+R0
+w1779262057
+8list.svh
+Flist.svh
+Z14 Fmips.sv
+R8
+Fcommon.sv
+Ftxn.sv
+Fmon_txn.sv
+Fc_ref_model.sv
+Fc_cov.sv
+Fc_mon.sv
+Fc_bfm.sv
+Fc_gen.sv
+Fc_agent.sv
+Fc_sbd.sv
+Fc_env.sv
+Z15 Ftop.sv
+L0 1
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R2
+vmips
+R5
+R6
+r1
+!s85 0
+!i10b 1
+!s100 ?^R0?Ez[a1M]UJJ=Yaif81
+IM_Hb3TO67dM]79lQ8LWXk2
+R7
+S1
+R0
+w1778823064
+8mips.sv
+R14
+L0 1
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R2
+Ttest
+!s110 1778907942
+Va^bSFBJ@11Xoi7>_z`9hd1
+R1
+!s102 +cover=fcbest
+o+cover=fcbest +acc
+R2
+ntest
+R3
+R0
+vtop
+R5
+DXx4 work 13 list_svh_unit 0 22 O>D74KE@HHf=mfb;bS:3H2
+R6
+r1
+!s85 0
+!i10b 1
+!s100 V:L=Jz<m<oL`TAKl;P>1Q2
+IXB2T=f@Qi]F271fNYFSP11
+R7
+S1
+R0
+w1778907386
+8top.sv
+R15
+L0 1
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R2
