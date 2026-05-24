@@ -27,16 +27,9 @@ IF  →  ID  →  EX  →  MEM  →  WB
 
 ---
 
-## Pipeline Diagram
-
-<!-- Add pipeline diagram image here -->
-> _Pipeline diagram with forwarding paths coming soon._
-
----
-
 ## Verification Architecture
-<!-- Add pipeline diagram image here -->
-> _verification diagram coming soon._
+<img width="1408" height="768" alt="Gemini_Generated_Image_sw5vv8sw5vv8sw5v" src="https://github.com/user-attachments/assets/09e81126-5763-4667-b958-a5f9d97bcb15" />
+
 
 ---
 
