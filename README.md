@@ -37,6 +37,7 @@ IF  →  ID  →  EX  →  MEM  →  WB
 
 The core was verified using a **reference model-based approach** with both random and directed stimulus generation:
 
+- White box approach of verification 
 - A reference model runs in parallel with the RTL.
 - Outputs are compared after every instruction.
 - A random stimulus generator drives instruction sequences automatically, with an option to switch to directed test cases for targeted scenario coverage.
