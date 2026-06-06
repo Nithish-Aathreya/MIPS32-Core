@@ -80,7 +80,7 @@ The core was verified using a **reference model-based approach** with both rando
 
 ## Sample Instructions
 
-### R-Type
+### R-Type:(operation,rd,rs,rt)
 
 ```asm
 add $t3, $t1, $t2 
@@ -90,13 +90,13 @@ or  $t6, $t1, $t2
 mul $t7, $t1, $t2
 ```
 
-### I-Type
+### I-Type:(operation,rt,rs,imm.value)
 
 ```asm
 addi $t0, $t1, 25
 ```
 
-### Load / Store
+### Load / Store:(operation rt,rs,imm.value)
 
 ```asm
 lw $t0, 0($t1)
