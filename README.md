@@ -1,6 +1,6 @@
 # MIPS32 Pipelined Processor Core
 
-A 32-bit MIPS RISC processor core implemented in Systemverilog, featuring a classic 5-stage pipeline with data forwarding and flush-based hazard control.
+A 32-bit MIPS RISC processor core implemented in SystemVerilog, featuring a 2-phase clocked 5-stage pipeline with data forwarding and flush-based branch hazard control.
 
 ---
 
@@ -19,11 +19,34 @@ IF  →  ID  →  EX  →  MEM  →  WB
 | EX  | Execute / ALU Operation |
 | MEM | Memory Access |
 | WB  | Write Back |
+## Instruction Fields:
 
-### Hazard Handling
 
-- **Forwarding Unit** — resolves RAW (Read After Write) data hazards by forwarding results from EX/MEM/WB stages directly to the EX stage inputs, avoiding unnecessary stalls.
-- **Flush Logic** — handles control hazards (branches) by flushing incorrectly fetched instructions from the pipeline on a taken branch.
+
+![alt text](Instr_fields.png)
+
+
+---
+## Instructions flow in pipeline:
+Sample code:
+```asm
+addi $t0, $t1, 0
+beqz $t0, LABEL        ; control hazard — flush tested here
+add  $t1, $t0, $t0
+LABEL:
+addi $t2, $zero, 10
+```
+![alt text](Instr_flow.png)
+
+
+
+---
+## Hazard Handling
+- **Data Hazard** - Forwarding unit
+- **Control Hazard** - Pipeline flush
+- **Structural Hazard** - Harvard architecture
+- ***Forwarding Unit*** — resolves RAW (Read After Write) data hazards by forwarding results from EX/MEM/WB stages directly to the EX stage inputs, avoiding unnecessary stalls.
+- ***Flush Logic*** — handles control hazards (branches) by flushing incorrectly fetched instructions from the pipeline on a taken branch.
 
 ---
 
@@ -60,7 +83,7 @@ The core was verified using a **reference model-based approach** with both rando
 ### R-Type
 
 ```asm
-add $t3, $t1, $t2
+add $t3, $t1, $t2 
 sub $t4, $t1, $t2
 and $t5, $t1, $t2
 or  $t6, $t1, $t2
