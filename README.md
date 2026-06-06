@@ -36,8 +36,7 @@ add  $t1, $t0, $t0
 LABEL:
 addi $t2, $zero, 10
 ```
-![alt text](Instr_flow.png)
-
+![alt text](Instr_fl.png)
 
 
 ---
